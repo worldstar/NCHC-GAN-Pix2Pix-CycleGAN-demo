@@ -52,6 +52,9 @@ less JOBNAME-JOBID.out
 ### 6. Revise cyclegan_train_singularity.slurm when you like to run the CycleGAN: 
 Please refer to the Step 3 and Step 4.
 
+## TWCC (Supports Tesla V100)
+TWCC actually provides a very sufficient GPU resources. If you like to use older GPU on TWCC, you will login to the master node at ln01.twcc.ai by SSH. Then, the SIF could be available under the /work/TWCC_cntr, including the pytorch_23.11-py3.sif used by this example. The partition names could be the gp1d(run for one-day),gp2d(two-days), and gp4d(4-days). Once these required parameters are updated, the code could be run on TWCC.
+
 ## Useful Resources:
 1. Nano5 Main Document: https://man.twcc.ai/@AI-Pilot/manual
 2. Slides: https://docs.google.com/presentation/d/1WKUXZJMqch0xUEPKZCN1cBLErxKtJ9P2/mobilepresent?pli=1&slide=id.p1
