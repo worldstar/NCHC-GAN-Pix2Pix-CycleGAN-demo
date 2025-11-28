@@ -62,10 +62,8 @@ TWCC actually provides a very sufficient GPU resources. If you like to use older
 4. Wallet Management：https://iservice.nchc.org.tw/nchc_service/nchc_service_qa_single.php?qa_code=20
 
 ## Credits:
-1. The image classification algorithm is obtain from timm (PyTorch Image Models) 
-https://github.com/huggingface/pytorch-image-models.git
-2. Image Dataset: Diabetic Retinopathy Screening AI Computer Vision Model
-https://universe.roboflow.com/ucla-master-of-quantitative-economics/diabetic-retinopathy-screening-ai
+1. The GAN algorithm is obtained from [pytorch-CycleGAN-and-pix2pix] (https://github.com/junyanz/pytorch-CycleGAN-and-pix2pix)
+2. Image Dataset: Built-in dataset in the GAN algorithm repo.
 
 ## Extra
 If you are interested in the Taiwan Computing Cloud (TWCC) with Tesla V100 GPU with web interface, please read the slides "How to use TWCC-YOLOv9.pdf" in the Slides folder.
