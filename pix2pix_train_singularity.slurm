@@ -61,7 +61,7 @@ echo "Experiment name: ${EXP_NAME}"
 ########################
 echo "Starting training with Singularity + GPU..."
 
-srun singularity exec --nv "$CONTAINER" python train.py \
+srun singularity exec --nv "$CONTAINER" python train2.py \
   --dataroot "${DATAROOT}" \
   --name "${EXP_NAME}" \
   --model pix2pix \

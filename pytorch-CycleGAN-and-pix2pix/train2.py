@@ -71,7 +71,7 @@ if __name__ == "__main__":
             total_iters += opt.batch_size
             epoch_iter += opt.batch_size
             model.set_input(data)  # unpack data from dataset and apply preprocessing
-            with autocast("cuda"):
+            with autocast("cuda", dtype=torch.bfloat16):
                 model.forward()  # Generator forward pass with FP16
             model.optimize_parameters2()  # Discriminator and Generator optimization with mixed precision (autocast + GradScaler)
 
