@@ -7,7 +7,7 @@
 #SBATCH --gres=gpu:1                 # Number of GPUs
 
 #SBATCH --cpus-per-task=8            # CPU cores per task
-#SBATCH --mem=32G                    # Memory
+#SBATCH --mem=128G                    # Memory
 #SBATCH -t 24:00:00                  # Max run time (hh:mm:ss)
 #SBATCH --account=MSTXXXX           # <-- replace with your project/account ID
 #SBATCH -o %x-%j.out                 # Stdout log
@@ -68,7 +68,7 @@ srun singularity exec --nv "$CONTAINER" python train2.py \
   --dataset_mode unaligned \
   --direction AtoB \
   --batch_size 32 \
-  --n_epochs 100 \
+  --n_epochs 10 \
   --num_threads 8
 
 echo "Job finished on $(date)"
